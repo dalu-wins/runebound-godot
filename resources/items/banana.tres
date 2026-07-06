@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HealthItem" format=3 uid="uid://dcidtn76cnik5"]
+
+[ext_resource type="Texture2D" uid="uid://buitoyrga7pud" path="res://sprites/fruits/banana.png" id="1_1xm7w"]
+[ext_resource type="Script" uid="uid://bminhetxjqjgc" path="res://resources/items/scripts/health_item.gd" id="1_ymkv2"]
+
+[resource]
+script = ExtResource("1_ymkv2")
+heal_amount = 5
+item_name = "Banana"
+icon = ExtResource("1_1xm7w")
+description = "A soft, curved fruit with a bright yellow peel. Quick to eat and gentle on the stomach, making it a reliable pick-me-up between fights."
+metadata/_custom_type_script = "uid://bminhetxjqjgc"

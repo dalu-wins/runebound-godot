@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HealthItem" format=3 uid="uid://cjsbrdsj1rvng"]
+
+[ext_resource type="Texture2D" uid="uid://dtllxolagwtbs" path="res://sprites/fruits/orange.png" id="1_5jd5v"]
+[ext_resource type="Script" uid="uid://bminhetxjqjgc" path="res://resources/items/scripts/health_item.gd" id="1_i12sq"]
+
+[resource]
+script = ExtResource("1_i12sq")
+heal_amount = 6
+item_name = "Orange"
+icon = ExtResource("1_5jd5v")
+description = "A round citrus fruit with a thick, fragrant peel. Its juicy segments offer a burst of sharp sweetness, perfect for shaking off fatigue."
+metadata/_custom_type_script = "uid://bminhetxjqjgc"

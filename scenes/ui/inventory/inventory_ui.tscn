@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://o3ce1o5uy4vg"]
+
+[ext_resource type="Script" uid="uid://e6s3tng37mye" path="res://scenes/ui/inventory/scripts/inventory_ui.gd" id="1_msrby"]
+[ext_resource type="Shader" uid="uid://dr5o4gihcncvx" path="res://style/shaders/blur_ui.gdshader" id="2_8wncw"]
+[ext_resource type="Theme" uid="uid://c1a14gvs464jl" path="res://style/theme.tres" id="2_a0on1"]
+[ext_resource type="PackedScene" uid="uid://ms47hy153tr1" path="res://scenes/ui/inventory/item_row.tscn" id="3_8pb6k"]
+[ext_resource type="PackedScene" uid="uid://3rv4enaskjxc" path="res://scenes/ui/input_hints/inventory_hints.tscn" id="5_7cyi0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7cyi0"]
+shader = ExtResource("2_8wncw")
+shader_parameter/blur_amount = 8.00000038
+shader_parameter/sample_count = 8
+shader_parameter/tint_color = Color(1, 1, 1, 1)
+shader_parameter/tint_strength = 0.50000002375
+
+[node name="Inventory" type="Control" unique_id=1109062013]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_msrby")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1557688905]
+material = SubResource("ShaderMaterial_7cyi0")
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_a0on1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=205161589]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=845382050]
+layout_mode = 2
+theme = ExtResource("2_a0on1")
+theme_override_font_sizes/font_size = 32
+text = "Inventory"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/VBoxContainer" unique_id=1746617036]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/scrollbar_h_separation = 6
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/VBoxContainer/ScrollContainer" unique_id=592807210]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_a0on1")
+
+[node name="ItemRow" parent="PanelContainer/VBoxContainer/ScrollContainer/GridContainer" unique_id=1538472789 instance=ExtResource("3_8pb6k")]
+layout_mode = 2
+
+[node name="InventoryHints" parent="PanelContainer/VBoxContainer" unique_id=186014891 instance=ExtResource("5_7cyi0")]
+layout_mode = 2

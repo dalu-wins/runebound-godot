@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://crqjyj11rfr4v"]
+
+[ext_resource type="Material" uid="uid://ctvx1r2rm22c" path="res://style/materials/blur_bg_material.tres" id="1_gwpgs"]
+[ext_resource type="Script" uid="uid://dlw2662bajdfj" path="res://scenes/ui/health/scripts/health_ui.gd" id="1_r1pwr"]
+[ext_resource type="Theme" uid="uid://c1a14gvs464jl" path="res://style/theme.tres" id="2_gwpgs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwpgs"]
+content_margin_left = 1.0
+content_margin_top = 1.0
+content_margin_right = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7ixm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghdc6"]
+bg_color = Color(0.72967786, 0.38006502, 0.28826055, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jaea2"]
+bg_color = Color(0.48186743, 0.1382395, 0.06933329, 1)
+
+[node name="HealthUI" type="PanelContainer" unique_id=1287303761]
+material = ExtResource("1_gwpgs")
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 20.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gwpgs")
+script = ExtResource("1_r1pwr")
+
+[node name="HealPreviewBar" type="ProgressBar" parent="." unique_id=32360888]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("2_gwpgs")
+theme_override_styles/background = SubResource("StyleBoxFlat_a7ixm")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ghdc6")
+value = 53.0
+show_percentage = false
+
+[node name="HPBar" type="ProgressBar" parent="." unique_id=1245836194]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("2_gwpgs")
+theme_override_styles/background = SubResource("StyleBoxFlat_a7ixm")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jaea2")
+value = 33.0
+show_percentage = false

@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ctvx1r2rm22c"]
+
+[ext_resource type="Shader" uid="uid://dr5o4gihcncvx" path="res://style/shaders/blur_ui.gdshader" id="1_7kxhy"]
+
+[resource]
+shader = ExtResource("1_7kxhy")
+shader_parameter/blur_amount = 8.00000038
+shader_parameter/sample_count = 8
+shader_parameter/tint_color = Color(1, 1, 1, 1)
+shader_parameter/tint_strength = 0.50000002375

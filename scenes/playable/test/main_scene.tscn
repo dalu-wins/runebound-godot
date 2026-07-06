@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dpec1be8uwixt"]
+
+[ext_resource type="Script" uid="uid://dk3ouqgllqkq8" path="res://scenes/playable/test/scripts/main_scene.gd" id="1_6gefe"]
+[ext_resource type="PackedScene" uid="uid://y6idk8p1rooc" path="res://scenes/player/player.tscn" id="1_c6rli"]
+[ext_resource type="PackedScene" uid="uid://ftn42k06r46f" path="res://scenes/playable/test/map.tscn" id="2_6gefe"]
+[ext_resource type="PackedScene" uid="uid://crqjyj11rfr4v" path="res://scenes/ui/health/health_ui.tscn" id="3_3xftr"]
+[ext_resource type="PackedScene" uid="uid://o3ce1o5uy4vg" path="res://scenes/ui/inventory/inventory_ui.tscn" id="3_a7ixm"]
+[ext_resource type="PackedScene" uid="uid://dr0ge2yeenyo4" path="res://scenes/ui/input_hints/general_hints.tscn" id="4_3xftr"]
+
+[node name="Main" type="Node2D" unique_id=1826265634]
+y_sort_enabled = true
+script = ExtResource("1_6gefe")
+metadata/_edit_horizontal_guides_ = [207.0]
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=2076335460]
+
+[node name="InputHintUI" parent="UILayer" unique_id=186014891 instance=ExtResource("4_3xftr")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -52.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="InventoryUI" parent="UILayer" unique_id=1109062013 instance=ExtResource("3_a7ixm")]
+visible = false
+
+[node name="HealthUI" parent="UILayer" unique_id=1287303761 instance=ExtResource("3_3xftr")]
+
+[node name="Player" parent="." unique_id=503560196 instance=ExtResource("1_c6rli")]
+position = Vector2(780, 304)
+
+[node name="Map" parent="." unique_id=27543176 instance=ExtResource("2_6gefe")]

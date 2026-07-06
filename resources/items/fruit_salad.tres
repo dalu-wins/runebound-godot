@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HealthItem" format=3 uid="uid://bkvfbrfepnmh8"]
+
+[ext_resource type="Texture2D" uid="uid://cu5lvwy12342s" path="res://sprites/fruits/fruits.png" id="1_c4sfu"]
+[ext_resource type="Script" uid="uid://bminhetxjqjgc" path="res://resources/items/scripts/health_item.gd" id="1_vf6mh"]
+
+[resource]
+script = ExtResource("1_vf6mh")
+item_name = "Fruit Salad"
+icon = ExtResource("1_c4sfu")
+description = "A refreshing mix of chopped seasonal fruits, tossed together for a light and juicy snack. Restores a small amount of health and leaves a faint scent of citrus in the air."
+metadata/_custom_type_script = "uid://bminhetxjqjgc"

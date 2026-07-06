@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HealthItem" format=3 uid="uid://dhsl5y64i6o4"]
+
+[ext_resource type="Script" uid="uid://bminhetxjqjgc" path="res://resources/items/scripts/health_item.gd" id="1_b35ei"]
+[ext_resource type="Texture2D" uid="uid://cyde6xm0dshmv" path="res://sprites/fruits/strawberry.png" id="1_fl6b5"]
+
+[resource]
+script = ExtResource("1_b35ei")
+heal_amount = 7
+item_name = "Strawberry"
+icon = ExtResource("1_fl6b5")
+description = "A small, deep red berry with a sweet, slightly tart flavor. Delicate and easily bruised, but bursting with juice when eaten fresh."
+metadata/_custom_type_script = "uid://bminhetxjqjgc"

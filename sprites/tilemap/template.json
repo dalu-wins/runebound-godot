@@ -1,0 +1,57 @@
+{ "frames": [
+   {
+    "filename": "template (on_water) 1.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 144, "h": 80 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 80 },
+    "sourceSize": { "w": 1024, "h": 1024 },
+    "duration": 100
+   },
+   {
+    "filename": "template (on_sand) 1.aseprite",
+    "frame": { "x": 0, "y": 80, "w": 144, "h": 80 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 80 },
+    "sourceSize": { "w": 1024, "h": 1024 },
+    "duration": 100
+   },
+   {
+    "filename": "template (on_grass) 1.aseprite",
+    "frame": { "x": 0, "y": 160, "w": 144, "h": 80 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 80 },
+    "sourceSize": { "w": 1024, "h": 1024 },
+    "duration": 100
+   },
+   {
+    "filename": "template (bridge) 1.aseprite",
+    "frame": { "x": 0, "y": 240, "w": 144, "h": 80 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 80 },
+    "sourceSize": { "w": 1024, "h": 1024 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.17.2-x64",
+  "image": "tileset_v3.png",
+  "format": "I8",
+  "size": { "w": 144, "h": 320 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "on_water", "opacity": 255, "blendMode": "normal" },
+   { "name": "on_sand", "opacity": 255, "blendMode": "normal" },
+   { "name": "on_grass", "opacity": 255, "blendMode": "normal" },
+   { "name": "bridge", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

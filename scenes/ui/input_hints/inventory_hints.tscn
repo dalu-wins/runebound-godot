@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://3rv4enaskjxc"]
+
+[ext_resource type="PackedScene" uid="uid://bicd0uea12wnh" path="res://scenes/ui/input_hints/hint_row.tscn" id="1_2ap04"]
+[ext_resource type="Texture2D" uid="uid://dl1i4o2md37tc" path="res://sprites/ui/input_controller2.png" id="2_2ap04"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ap04"]
+load_path = "res://.godot/imported/input_controller1.png-a42fe888ba0d28adc55ac8c324e5ab79.ctex"
+
+[node name="InventoryHints" type="VBoxContainer" unique_id=186014891]
+offset_right = 56.0
+offset_bottom = 40.0
+
+[node name="Use" parent="." unique_id=32887339 instance=ExtResource("1_2ap04")]
+layout_mode = 2
+icon = SubResource("CompressedTexture2D_2ap04")
+text = "Use"
+
+[node name="Back" parent="." unique_id=628074576 instance=ExtResource("1_2ap04")]
+layout_mode = 2
+icon = ExtResource("2_2ap04")
+text = "Back"
